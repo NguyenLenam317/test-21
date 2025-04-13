@@ -1,0 +1,136 @@
+Project Title: Ecosense Project Goal: To develop a web application exclusively for the Hanoi region that provides users with real-time weather information, climate change awareness data, personalized health recommendations based on environmental factors, predictive analysis for extreme weather events, an AI chatbot for regional queries, activity and clothing recommendations, and a social platform for sustainability-related polls, utilizing the Open Metro API for weather, with deep personalization based on user preferences gathered through a comprehensive survey upon first visit. Target Audience: Individuals living in or interested in the Hanoi region.
+Core Features and Specifications (Exclusively for Hanoi):
+1. User Onboarding and Deep Personalization via Survey:
+1.1. Comprehensive User Survey (First-Time Users):
+Functionality: Upon their very first visit to the site, users must be presented with a detailed survey before accessing other features. This survey aims to gather granular information for deep personalization.
+Data Requirements: The survey should include, but not be limited to, questions about:
+Health Profile:
+Do you have any respiratory conditions (e.g., asthma, bronchitis, COPD)? If yes, please specify.
+Do you have any allergies (e.g., pollen, dust, mold)? If yes, please list them.
+Do you have any cardiovascular health concerns (e.g., high blood pressure, heart disease)?
+Do you have any skin sensitivities or conditions (e.g., eczema)?
+Do you have any other chronic health conditions we should be aware of?
+What is your general fitness level (e.g., sedentary, light exercise 1-2 times a week, moderate exercise 3-5 times a week, active daily)?
+Lifestyle Habits:
+What are your typical daily routines and activity patterns (e.g., mostly indoors, frequent outdoor commuting, regular outdoor recreation)?
+What are your primary modes of transportation in Hanoi (e.g., motorbike, car, bus, walking, bicycle)?
+Do you have any specific dietary preferences or restrictions (e.g., vegetarian, vegan, gluten-free, specific food allergies)?
+What are your typical sleep habits (e.g., early riser, night owl, average hours of sleep)?
+Environmental Sensitivities:
+How sensitive are you to air pollution (e.g., not sensitive, mildly sensitive, very sensitive)?
+How sensitive are you to high UV radiation (e.g., easily sunburned, moderately sensitive, not very sensitive)?
+How sensitive are you to extreme temperatures (both heat and cold)?
+Interests and Preferences:
+What types of outdoor activities do you enjoy in Hanoi (e.g., walking in parks, cycling, sports, sightseeing)?
+What are your preferred clothing styles (e.g., comfortable and practical, fashionable, business casual)?
+How interested are you in sustainability and environmental issues in Hanoi (e.g., not interested, somewhat interested, very interested)?
+Do you have any specific preferences regarding receiving notifications or reminders?
+UI/UX:
+Clear, multi-page survey interface with progress indicators.
+Optional questions clearly marked.
+User-friendly input methods (e.g., radio buttons, checkboxes, text fieldls).
+A concise privacy policy explaining how the data will be used and protected.
+Option for users to review and edit their survey responses later.
+2. Real-time Environmental Data (Personalized):
+2.1. Weather Forecasting Showcase (Hanoi Focused):
+Functionality: Display current weather conditions and future forecasts specifically for Hanoi.
+Data Requirements: Utilize the Open Metro API (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+2.2. Health and Environmental Data Integration (Hanoi Focused):
+Functionality: Provide health-related information based on weather and pollution data specific to Hanoi, highly personalized based on the detailed user survey data.
+Data Requirements: Real-time AQI (with specific pollutant levels if available), UV index, pollen count (research availability), logic to generate warnings and health tips that directly correlate with user-provided health conditions, sensitivities, and lifestyle.
+Examples:
+If a user indicates asthma and high AQI is detected, prominently display a warning and recommend staying indoors or wearing a high-quality mask.
+If a user is sensitive to UV radiation, provide specific sunscreen recommendations based on the current UV index.
+If a user has pollen allergies and high pollen count is reported (if available), advise them on taking necessary precautions.
+UI/UX: (Refer to the original prompt for specifics, ensure personalized warnings and tips are clearly highlighted).
+3. AI-Powered Insights and Analysis (Personalized):
+3.1. Climate Change Awareness (Hanoi and potentially Vietnam):
+Functionality: Visualize historical and current climate change data relevant to Hanoi.
+Data Requirements: Research publicly available data sources (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+3.2. Predictive Analysis for Extreme Weather (Hanoi Focused):
+Functionality: Utilize historical weather data and the groq model (API Key: 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) to forecast potential extreme weather events for Hanoi.
+Specific Events to Consider: Heatwaves (define temperature and duration thresholds relevant to Hanoi), heavy rainfall (define thresholds), storms (including potential for strong winds and lightning), potential flooding (if data and models allow).
+Data Requirements: Historical weather data for Hanoi, integration with groq (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+3.3. AI Chatbot for Regional Queries (Hanoi Focused - Personalized):
+Functionality: Implement an AI chatbot (using groq - API Key: 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) to answer user questions about Hanoi's weather, climate, health, and sustainability, with responses highly personalized based on the user's survey data.
+Example Interactions:
+User: "What should I do today if the air quality is bad?" -> Chatbot response considers if the user has respiratory conditions.
+User: "Is it going to be sunny this weekend?" -> Chatbot provides the forecast and might suggest activities the user enjoys based on their survey.
+Data Requirements: Access to integrated data, integration with groq, logic to incorporate user survey data into chatbot responses (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+4. Personalized Recommendations:
+4.1. Activity Recommendations (Hanoi Focused - Highly Personalized):
+Functionality: Suggest optimal times and types of outdoor activities in Hanoi based on current and forecast environmental conditions, deeply considering user preferences, fitness level, and health conditions from the survey.
+Examples:
+If a user enjoys walking and the weather is pleasant, suggest specific parks or routes in Hanoi.
+If a user has respiratory issues, advise against strenuous outdoor activities during high AQI.
+If a user prefers morning activities, prioritize suggestions for that time of day.
+Data Requirements: Current and forecast weather, UV index, AQI, logic for suitable conditions, sophisticated integration of detailed user survey data for nuanced personalization (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+4.2. Clothing Recommendations (Hanoi Focused - Highly Personalized):
+Functionality: Suggest appropriate clothing based on the current and forecast weather conditions in Hanoi, taking into account user preferences for clothing styles and any sensitivities to temperature.
+Examples:
+If the weather is hot and humid, recommend light and breathable fabrics.
+If a user prefers modest clothing, the recommendations should align with that.
+If a user is sensitive to cold, suggest layering even in moderately cool weather.
+Data Requirements: Current and forecast temperature, probability of precipitation, logic for clothing suggestions, detailed integration of user survey data for personalized recommendations (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics, consider showing visual examples of suggested clothing).
+5. Community and Sustainability Engagement (Hanoi Focused):
+5.1. Sustainable Tips and Reminders (Hanoi Focused):
+Functionality: Provide daily reminders and seasonal recommendations for sustainable living and energy conservation relevant to Hanoi.
+Examples:
+Reminders about local recycling programs and schedules in specific Hanoi districts.
+Tips for reducing energy consumption during peak hours in Hanoi's hot season.
+Suggestions for using public transportation options like the Hanoi Metro and buses.
+Data Requirements: Database or logic for generating tips, seasonal recommendations (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+5.2. Social Aspect - Sustainability Polls (Hanoi Focused):
+Functionality: Allow users in Hanoi to participate in polls related to sustainability topics relevant to the city.
+Data Requirements: Database for polls and votes, admin ability to create and manage polls focused on Hanoi (refer to the original prompt for specifics).
+UI/UX: (Refer to the original prompt for specifics).
+Technical Requirements:
+Platform: Web application (responsive design for desktop and mobile).
+Frontend: Specify preferred technologies (e.g., React, Vue.js, Angular, plain HTML/CSS/JavaScript).
+Backend: Specify preferred technologies (e.g., Node.js with Express, Python with Django/Flask, Ruby on Rails).
+Database: Specify preferred database (e.g., PostgreSQL, MySQL, MongoDB) - ensure secure and efficient storage and retrieval of user survey data for personalization.
+API Integrations:
+Open Metro API: The primary source for weather data in Hanoi.
+groq: For extreme weather prediction and the AI chatbot (API Key: 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).
+Other APIs: Research and integrate for climate change, air quality (prioritize Hanoi-specific sources), or pollen data specific to Hanoi.
+Deployment: Consider mentioning the desired deployment environment (e.g., cloud platform like Google Cloud, AWS, Azure, or a specific hosting provider).
+User Interface (UI) and User Experience (UX) Guidelines:
+Clean and Intuitive Design, Visually Appealing, Responsive Design, Accessibility (refer to the original prompt for specifics).
+Page Structure: Each main feature of the application (e.g., Weather Forecast, Climate Change, Health Data, Extreme Weather, Chatbot, Activities, Clothing, Sustainability Tips, Polls, and the initial Survey) must reside on its own dedicated page, easily accessible through a clear and consistent navigation menu.
+Data Sources (Specific to Hanoi - AI agent should prioritize these):
+Weather Data: Open Metro API (primary).
+Climate Change Data: Hanoi government websites, Vietnam's Ministry of Natural Resources and Environment, reputable research institutions focusing on Hanoi or Vietnam.
+Air Quality Data: Hanoi Department of Natural Resources and Environment (most authoritative source), potentially Open Metro API if reliable Hanoi-specific data is available, or other recognized local air quality monitoring stations with public APIs in Hanoi.
+UV Index Data: Likely Open Metro API.
+Pollen Data: Research availability for Hanoi; if limited, consider alternative data or acknowledge potential unavailability.
+Historical Weather Data: Prioritize sources offering data specifically for Hanoi, potentially Open Metro API or national meteorological archives.
+AI Model Specifications (Using groq - API Key: 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):
+Extreme Weather Prediction: Utilize relevant predictive models offered by groq, focusing on accuracy and relevance to Hanoi's specific weather patterns and potential hazards.
+AI Chatbot: Integrate with groq's chatbot service, ensuring the chatbot's knowledge base is comprehensive and up-to-date with all the data integrated into the application, and that it can effectively leverage user survey data for personalized responses. Consider training the chatbot on common queries related to Hanoi's environment and health in both Vietnamese and English.
+The codebase is clean, well-commented, and easy to understand
+Ease of Deployment Considerations:
+Containerization: Consider using Docker to containerize the application and its dependencies. Provide a Dockerfile and docker-compose.yml for easy setup and deployment across different environments.
+Infrastructure as Code (IaC): If deploying to a cloud platform, explore using IaC tools like Terraform or CloudFormation to define and manage the necessary infrastructure.
+Dependency Management: Ensure all dependencies are clearly defined and managed using appropriate tools (e.g., requirements.txt for Python, package.json for Node.js). Avoid dependencies that are difficult to install or have a history of causing deployment issues.
+Environment Variables: Utilize environment variables for configuration settings (API keys, database credentials, etc.) to avoid hardcoding sensitive information in the application code.
+Deployment Scripts: Provide simple scripts (e.g., shell scripts) for building, testing, and deploying the application to the chosen environment.
+CI/CD Pipeline (Optional but Recommended): If feasible, outline a basic Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate the build, test, and deployment process.
+Clear Documentation: Provide comprehensive documentation on how to set up, configure, build, and deploy the application. Include instructions for installing dependencies, setting up environment variables, and running deployment scripts.
+
+Page Structure: Each main feature of the application (e.g., Weather Forecast, Climate Change, Health Data, Extreme Weather, Chatbot, Activities, Clothing, Sustainability Tips, Polls, and the initial Survey) must reside on its own dedicated page, easily accessible through a clear and consistent navigation menu.
+Code Review and Error Correction:
+Before finalizing and presenting any code, the AI coding agent must perform a thorough review of the generated code for potential errors, bugs, and adherence to best practices. This review should include (but not be limited to):
+Syntax errors and typos.
+Logical errors in the implementation of each function and feature.
+Potential runtime exceptions.
+Compliance with the specified programming languages and frameworks.
+Adherence to clean coding principles and commenting standards.
+If any errors are identified during the review, the AI coding agent should attempt to correct them and regenerate the code. This process should be iterative until the AI is confident that the generated code is functional and meets the requirements for every function and every part of the application.
+

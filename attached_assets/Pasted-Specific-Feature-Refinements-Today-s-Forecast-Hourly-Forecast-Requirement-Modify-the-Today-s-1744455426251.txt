@@ -1,0 +1,35 @@
+Specific Feature Refinements:
+
+Today's Forecast - Hourly Forecast:
+
+Requirement: Modify the "Today's Forecast" section so that the hourly forecast begins with the next hour from the current time (5:54 PM +07 on April 12, 2025). For example, the first hourly forecast displayed should be for 6:00 PM, followed by 7:00 PM, and so on.
+Weather Forecast Details:
+
+Requirement: Add more detailed information to both the hourly and daily weather forecasts. Specifically, ensure the forecast includes:
+Probability of Rain: Display the percentage chance of precipitation.
+Rain Amount: If rain is expected, provide an estimate of the expected rainfall amount (e.g., in millimeters or inches).
+Consider adding other relevant weather details such as humidity levels, wind gusts, and pressure trends if the weather API provides this information.
+Current Weather in Hanoi:
+
+Requirement: Verify and ensure that the current weather conditions displayed for Hanoi on the Weather page accurately reflect the real-time weather data obtained from the weather API at the time of viewing. This should dynamically update.
+Historical AQI and Pollen Data Charts:
+
+Issue: The charts for "Historical AQI (AQI trends over the past 30 days in Hanoi)" and "Pollen Forecast (7-day pollen levels for Hanoi region)" are still reported as not working.
+Requirement: Investigate and fix the issues preventing these charts from loading and displaying data correctly. Ensure they are fetching and visualizing the appropriate historical AQI data for Hanoi and the 7-day pollen forecast for the Hanoi region (if pollen data is available).
+Enhance AI Integration for Personalization:
+
+General Requirement: Review all existing features (Weather Forecast, Climate Change Awareness, Health and Environmental Data Integration, Predictive Analysis for Extreme Weather, AI Chatbot, Activity Recommendations, Clothing Recommendations, Sustainable Tips, Polls) and identify opportunities to further integrate AI for enhanced personalization based on the user's survey data and real-time environmental conditions.
+
+Consider the following for AI integration:
+
+Contextual Recommendations: Can the AI analyze the current weather and the user's survey data to provide more contextually relevant recommendations? (e.g., if it's a hot day and the user mentioned they enjoy walking, suggest early morning or late evening walks).
+Proactive Insights: Can the AI proactively provide insights or warnings based on the combination of environmental data and the user's profile? (e.g., a user with asthma receiving an early warning about a predicted spike in air pollution).
+Dynamic Content: Can the AI dynamically adjust the content or presentation of information based on user preferences or current conditions?
+Improved Chatbot Interactions: Ensure the AI Chatbot leverages the user's survey data effectively in its responses and can provide more nuanced and personalized information.
+Data Context for AI:
+
+To effectively implement these refinements and enhancements, the AI coding agent should:
+
+Utilize the Integrated APIs: Ensure all relevant APIs (Weather API, groq API, AQI API, Pollen API, Climate Change Data Sources) are being used to access the most up-to-date information.
+Access User Survey Data: The AI should have access to the user survey data stored in the database to personalize features.
+Consider Current Time and Location: The current time and the user's location (initially Hanoi for testing) should be used as context for real-time features like the hourly forecast and current weather.
